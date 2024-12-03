@@ -5,7 +5,7 @@
 import { REST, Routes } from 'discord.js';
 import { config } from 'dotenv';
 import fs from 'node:fs';
-import {data, execute} from './commands/rtt43bot.mjs';
+// import {data, execute} from './commands/rtt43bot.mjs';
 //import {data,  execute} from './commands/ping.mjs';
 
 config(); // Using dotenv config function directly
