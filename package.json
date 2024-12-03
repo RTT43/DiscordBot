@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node deploy-commands.mjs && node DiscordBot.mjs"
+    "start": "node deploy-commands.mjs && node DiscordBot.mjs",
+    "build": "echo \"Build step is not required for this project\""
   },
   "author": "",
   "license": "ISC",

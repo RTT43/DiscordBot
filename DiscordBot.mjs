@@ -47,5 +47,5 @@ client.on(Events.InteractionCreate, async interaction => {
 
 
 // Event listener for when a slash command is executed
-client.on(Events.InteractionCreate, handleInteraction);
+//client.on(Events.InteractionCreate, handleInteraction);
 
