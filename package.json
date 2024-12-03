@@ -2,11 +2,10 @@
   "name": "discordbot",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node deploy-commands.mjs && node DiscordBot.mjs",
-    "build": "echo \"Build step is not required for this project\""
-  },
+"scripts": {
+  "build": "node deploy-commands.mjs",
+  "start": "node DiscordBot.mjs"
+},
   "author": "",
   "license": "ISC",
   "description": "",
