@@ -2,7 +2,7 @@ import express from 'express';
 import { Client, Events, GatewayIntentBits,  Collection } from 'discord.js';
 import { config } from 'dotenv';
 import fs from 'fs';
-
+import connectToDatabase from './config/db.mjs';
 
 config();
 
@@ -77,6 +77,10 @@ client.on(Events.InteractionCreate, async interaction => {
 
 
 const app = express();
+
+
+connectToDatabase();
+
 const PORT = process.env.PORT || 3050;
 
 app.get('/', (req, res) => {

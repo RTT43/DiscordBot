@@ -3,12 +3,12 @@
 
 // Importing modules using ES6 syntax
 import { REST, Routes } from 'discord.js';
-import { config } from 'dotenv';
+import dotenv from 'dotenv';
 import fs from 'node:fs';
 // import {data, execute} from './commands/rtt43bot.mjs';
 //import {data,  execute} from './commands/ping.mjs';
 
-config(); // Using dotenv config function directly
+dotenv.config(); // Using dotenv config function directly
 
 const commands = [];
 const commandFiles = fs.readdirSync('./commands').filter((file) => file.endsWith('.mjs'));
