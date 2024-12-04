@@ -2,10 +2,10 @@
   "name": "discordbot",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
-  "build": "node deploy-commands.mjs",
-  "start": "node DiscordBot.mjs"
-},
+  "scripts": {
+    "build": "node deploy-commands.mjs",
+    "start": "nodemon DiscordBot.mjs"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
