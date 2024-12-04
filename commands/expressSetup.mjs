@@ -6,13 +6,26 @@ export const data = new SlashCommandBuilder()
 
 export async function execute(interaction) {
     try {
-        await interaction.reply(
-            ' Express Setup Commands: \n 1. npm init -y \n 2. npm install express dotenv cors mongodb mongoose \n 3. npm install nodemon \n 4. Create a file named server.mjs \n 5. Add the following \n import express from "express" \n' +
-'import dotenv from "dotenv";\n app.get(\'/\', (req, res) => { \n res.send(\'Hello World!\'); \n }); \n app.listen(3000, () => { \n console.log(\'Server is running on port 3000\'); \n }); \n 6. Run the server using npm start for nodemon server.mjs'
-        );
+        const commands = [
+            'Express Setup Commands:',
+            '1. npm init -y',
+            '2. npm install express dotenv cors mongodb mongoose',
+            '3. npm install nodemon',
+            '4. Create a file named server.mjs',
+            '5. Add the following:',
+            'import express from "express";',
+            'import dotenv from "dotenv";',
+            'app.get(\'/\', (req, res) => {',
+            '  res.send(\'Hello World!\');',
+            '});',
+            'app.listen(3000, () => {',
+            '  console.log(\'Server is running on port 3000\');',
+            '});',
+            '6. Run the server using npm start or nodemon server.mjs'
+        ];
+        await interaction.reply(commands.join('\n'));
     } catch (error) {
         console.error('Error in expressSetup command:', error);
-        throw error; // Rethrow the error to be caught in the event handler
+        throw error;
     }
 }
-
